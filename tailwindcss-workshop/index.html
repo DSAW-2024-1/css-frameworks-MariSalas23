@@ -3,31 +3,173 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Workshop</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              Lightlightpurple: 'hsl(241, 58%, 76%)',
+              Circlepurple: 'hsl(255,71%,46%)',
+              Lightgreenteal: 'hsl(165,49%,54%)',
+              Darkyellow: 'hsl(44,80%,62%)',
+              Lightpurple: 'hsl(240,71%,97%)',
+              Lightblue:'hsl(180,44%,96%)',
+              Lightyellow: 'hsl(42,100%,97%)',
+              Lightredback: '	hsl(16, 100%, 98%)',
+              Lightred: 'hsl(0,100%,67%)',
+              Lightslateblue: 'hsl(252, 100%, 67%)',
+              Lightroyalblue: 'hsl(241, 81%, 54%)',
+              Violetblue: 'hsla(256, 72%, 46%, 1)',
+              Persianblue: 'hsla(241, 72%, 46%, 0)',
+              White: 'hsl(0, 0%, 100%)',
+              Paleblue: 'hsl(221, 100%, 96%)',
+              Lightlavender: 'hsl(241, 100%, 89%)',
+              Darkgrayblue: 'hsl(224, 30%, 27%)',
+              Lightgray: 'hsl(0, 0%, 65%)',
+              clifford: '#da373d',
+            },
+            fontFamily: {
+              'hanken': ['Hanken Grotesk','sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
   </head>
-  <body> 
-    Your Result
-    76
-    of 100
-  
-    Great
-    You scored higher than 65% of the people who have taken these tests.
-  
-    Summary
-  
-    Reaction
-    80 / 100
-  
-    Memory
-    92 / 100
-  
-    Verbal
-    61 / 100
-  
-    Visual
-    72 / 100
-  
-    Continue
+
+  <body class="font-hanken text-Darkgrayblue text-[14px] flex justify-center items-center md:text-xl lg:h-screen"> 
+
+    <section class="w-[375px] mx-auto bg-White-300
+                    shadow-lg shadow-Darkgrayblue
+                    lg:flex lg:mt-6 lg:w-[740px] lg:h-[512px] lg:rounded-3xl
+                    md:text-xl md:h-screen md:w-[100%]">
+
+      <div class="bg-gradient-to-b from-Lightslateblue to-Lightroyalblue
+                  h-[356px] pt-8 px10 
+                  text-center
+                  rounded-b-3xl
+                  p-8
+                  md:h-[550px] md:p-10
+                  lg:w-[370px] lg:h-full lg:rounded-3xl lg:pt-12">
+        
+        <h1 class="mb-6 text-Lightlavender text-[18px] font-bold
+                   md:text-3xl
+                   lg:mb-6 lg:text-2xl">Your Result</h1>
+
+        <div class="bg-gradient-to-b from-Circlepurple to-Lightroyalblue
+                    rounded-full h-[140px] w-[140px]
+                    mx-auto grid place-content-center mb-5 text-[18px]
+                    md:h-[250px] md:w-[250px]
+                    lg:h-[200px] lg:w-[200px]">
+          <p class="text-White font-bold text-5xl 
+                    md:text-[75px]
+                    lg:text-7xl">76</p>
+          <p class="text-Lightlightpurple md:text-[20px]">of 100</p>
+        </div>
+      
+        <h2 class="text-White text-[20px] font-bold 
+                   mb-2
+                   md:text-4xl md:mb-8
+                   lg:text-3xl lg:mb-6">Great</h2>
+        <p class="text-Lightlavender 
+                  md:text-[27px]
+                  lg:text-[20px]">
+                  You scored higher than 65% of the people who have taken these tests.</p>
+        
+      </div>
+
+      <div class="p-8 h-[454px]
+                  lg:w-[370px] lg:py-14 lg:px-10">
+        <h2 class="text-[18px] mb-6 font-bold
+                   md:text-3xl
+                   lg:text-2xl">Summary</h2>
+
+        <div class="bg-Lightredback
+                    flex place-content-between
+                    p-3 rounded-lg mb-5 h-[54px] items-center 
+                    md:text-[27px]
+                    lg:text-xl lg:px-4">
+          <p class="text-Greenteal 
+                     flex gap-2">
+            <img src="../assets/images/icon-reaction.svg" alt="Reaction">
+            <span class="text-Lightred font-bold">Reaction</span>      
+          </p>
+          <p>
+            <span class="font-bold">80 <span class="text-Lightgray"> / 100</span></span>
+          </p>
+        </div>
+        
+        <div class="bg-Lightyellow
+                    flex place-content-between
+                    p-3 rounded-lg mb-5 h-[54px] items-center
+                    md:text-[27px]
+                    lg:text-xl lg:px-">
+          <p class="text-Greenteal 
+                    flex gap-2">
+            <img src="../assets/images/icon-memory.svg" alt="Memory">
+            <span class="text-Darkyellow font-bold">Memory</span>      
+          </p>
+          <p>
+            <span class="font-bold">92 <span class="text-Lightgray"> / 100</span></span>
+          </p>
+        </div>
+
+        <div class="bg-Lightblue
+                    flex place-content-between
+                    p-3 rounded-lg mb-5 h-[54px] items-center
+                    md:text-[27px]
+                    lg:text-xl lg:px-">
+          <p class="text-Greenteal 
+                     flex gap-2">
+            <img src="../assets/images/icon-verbal.svg" alt="Verbal">
+            <span class="text-Lightgreenteal font-bold">Verbal</span>      
+          </p>
+          <p>
+            <span class="font-bold">61 <span class="text-Lightgray"> / 100</span></span>
+          </p>
+        </div>
+
+        <div class="bg-Lightpurple
+                    flex place-content-between
+                    p-3 rounded-lg mb-5 h-[54px] items-center
+                    md:text-[27px]
+                    lg:text-xl lg:px-">
+          <p class="text-Lightroyalblue
+                     flex gap-2">
+            <img src="../assets/images/icon-visual.svg" alt="Reaction">
+            <span class="text-Lightroyalblue font-bold">Visual</span>      
+          </p>
+          <p>
+            <span class="font-bold">72 <span class="text-Lightgray"> / 100</span></span>
+          </p>
+        </div>
+      
+        <button class="bg-Darkgrayblue text-White
+                       w-full h-14
+                       rounded-3xl
+                       font-bold
+                       text-[18px]
+                       md:text-[27px]
+                       lg:text-xl lg:px-10
+                       hover:bg-gradient-to-b from-Lightslateblue to-Lightroyalblue">
+          Continue
+        </button>
+      </div>
+    </section>
 
   </body>
 </html>
