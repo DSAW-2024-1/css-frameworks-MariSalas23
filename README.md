@@ -3,7 +3,7 @@
 
 ## Link
 
-## Imágenes Tailwind
+## Imágenes TailwindCSS
 
 320px x 480px
 ![Design preview for the Results summary component coding challenge](./design/t-mobile1.jpg)
