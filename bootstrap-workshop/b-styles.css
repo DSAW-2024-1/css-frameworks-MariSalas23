@@ -3,6 +3,27 @@
     font-size: 1rem;
 }
 
+.purple-container{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 100vw;
+    height: 40%;
+    gap: 1rem;
+    border-bottom-right-radius: 8%;
+    border-bottom-left-radius: 8%;
+}
+
+.circle{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100%;
+    background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(255,71%,46%));
+}
+
+.white-container{
+    background-color: white;
+    width: 100vw;
+}
+
 .red-reaction{
     color: hsl(0,100%,67%);
     background-color: hsl(16, 100%, 98%);
@@ -61,6 +82,11 @@
     }
 }
 
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
 button{
     color: white;
     background-color: hsl(224,30%,27%);
@@ -68,20 +94,16 @@ button{
     font-weight: bold;
 }
 
+button:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
 h2{
     font-size: 1.3rem!important;
 }
 
-button:hover {
-    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-  }
-
 h1,h2{
     font-weight: bold !important;
-}
-
-h1{
-    font-size: 1rem;
 }
 
 .number{
@@ -98,23 +120,50 @@ h1{
     color: hsl(241, 100%, 89%);
 }
 
-.circle{
-    height: 10rem;
-    width: 10rem;
-    border-radius: 100%;
-    background: linear-gradient(to bottom, hsl(241, 81%, 54%), hsl(255,71%,46%));
-}
-
-.white-container{
-    background-color: white;
-    width: 100vw;
-}
-
-.purple-container{
-    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    width: 100vw;
-    height: 40%;
-    gap: 1rem;
-    border-bottom-right-radius: 8%;
-    border-bottom-left-radius: 8%;
-}
+@media (min-width: 768px) and (max-width: 1024px), (min-height: 768px)
+{
+    *{
+        font-size: 1.5rem;
+    }
+    
+    .purple-container{
+        height: 40%;
+        gap: 1.5rem;
+        border-bottom-right-radius: 12%;
+        border-bottom-left-radius: 12%;
+    }
+    
+    .circle{
+        height: 15rem;
+        width: 15rem;
+    }
+    
+    .red-reaction{
+         border-radius: 12%;
+    }
+    
+    .green-verbal{
+        border-radius: 12%;
+    }
+    
+    .yellow-memory{
+        border-radius: 12%;
+    }
+    
+    .blue-visual{
+        border-radius: 12%;
+        }
+    }
+    
+    button{
+        border-radius: 2.5rem!important;
+    }
+    
+    h2{
+        font-size: 1.8rem!important;
+    }
+    
+    .number{
+        font-size: 3.9rem;
+    }
+    

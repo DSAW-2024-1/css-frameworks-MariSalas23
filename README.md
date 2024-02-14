@@ -3,35 +3,36 @@
 
 ## Link
 
-## Imágenes TailwindCSS
-
-320px x 480px
-![Design preview for the Results summary component coding challenge](./design/t-mobile1.jpg)
-![Design preview for the Results summary component coding challenge](./design/t-mobile2.jpg)
-
-768px x 1024px
-![Design preview for the Results summary component coding challenge](./design/t-tablet.jpg)
-
-+1024px
-![Design preview for the Results summary component coding challenge](./design/t-desktop.jpg)
-
-Hover
-![Design preview for the Results summary component coding challenge](./design/t-hover.jpg)
-
 ## Imágenes Bootstrap
 
 320px x 480px
-![Design preview for the Results summary component coding challenge](./design/b-mobile1.jpg)
-![Design preview for the Results summary component coding challenge](./design/b-mobile2.jpg)
+![Design for Bootstrap Mobile](./design/b-mobile1.jpg)
+![Design for Bootstrap Mobile](./design/b-mobile2.jpg)
 
 768px x 1024px
-![Design preview for the Results summary component coding challenge](./design/b-tablet.jpg)
+![Design for Bootstrap Tablet](./design/b-tablet1.jpg)
+![Design for Bootstrap Tablet](./design/b-tablet2.jpg)
 
 +1024px
-![Design preview for the Results summary component coding challenge](./design/b-desktop.jpg)
+![Design for Bootstrap Desktop](./design/b-desktop.jpg)
 
 Hover
-![Design preview for the Results summary component coding challenge](./design/b-hover.jpg)
+![Evidence of Bootstrap Button](./design/b-hover.jpg)
+
+## Imágenes TailwindCSS
+
+320px x 480px
+![Design for TailwindCSS Mobile](./design/t-mobile1.jpg)
+![Design for TailwindCSS Mobile](./design/t-mobile2.jpg)
+
+768px x 1024px
+![Design for TailwindCSS Tablet](./design/t-tablet.jpg)
+
++1024px
+![Design for TailwindCSS Desktop](./design/t-desktop.jpg)
+
+Hover
+![Evidence for TailwindCSS Button](./design/t-hover.jpg)
 
 # Reto de HTML y CSS con Bootstrap y TailwindCSS
 
