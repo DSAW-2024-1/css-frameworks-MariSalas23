@@ -8,6 +8,7 @@
     width: 100vw;
     height: 40%;
     gap: 1rem;
+    padding: 1.5rem;
     border-bottom-right-radius: 8%;
     border-bottom-left-radius: 8%;
 }
@@ -20,8 +21,8 @@
 }
 
 .white-container{
-    background-color: white;
     width: 100vw;
+    padding: 1.5rem;
 }
 
 .red-reaction{
@@ -120,6 +121,14 @@ h1,h2{
     color: hsl(241, 100%, 89%);
 }
 
+@media (max-height: 1025px) and (max-width: 1025px)
+{
+    .cont
+    {
+      flex-wrap: wrap;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1024px), (min-height: 768px)
 {
     *{
@@ -153,7 +162,6 @@ h1,h2{
     .blue-visual{
         border-radius: 12%;
         }
-    }
     
     button{
         border-radius: 2.5rem!important;
@@ -167,3 +175,36 @@ h1,h2{
         font-size: 3.9rem;
     }
     
+}
+
+@media (min-width: 1025px), (min-height: 1025px){
+
+    .cont {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Ajuste de la sombra */
+        border-radius: 2rem;
+        position: fixed;
+        width:100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .purple-container{
+        border-radius: 2rem;
+        height: 40%;
+        padding: 3rem;
+        gap: 1.5rem;
+    }
+
+    .white-container{
+        border-radius: 2rem;
+        height: 40%;
+        padding: 3rem!important;
+        gap: 1.5rem;
+    }
+
+    .circle{
+        height: 12.5rem;
+        width: 12.5rem;
+    }
+}
